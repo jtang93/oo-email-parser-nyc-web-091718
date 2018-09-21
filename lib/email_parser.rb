@@ -15,7 +15,7 @@ attr_accessor :emails
   end
 
 def parse
-  self.emails.split(/[, ]/).uniq.reject {|e| e.empty?}
+  self.emails.split(/[, ]/).uniq.reject {|elements| elements.empty?}
 end
 
 # binding.pry
